@@ -40,6 +40,25 @@ img {
   width: 100%;
 }
 
+/* Flex */
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
 .grow-shrink {
   flex-grow: 1;
   flex-shrink: 1;
