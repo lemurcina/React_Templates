@@ -1,0 +1,10 @@
+{
+  "name": "react_templates",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start:minimal": "cd minimal_template; yarn dev",
+    "start:state": "cd state_template; yarn dev",
+    "start:web3": "cd web3_template; yarn dev"
+  }
+}
