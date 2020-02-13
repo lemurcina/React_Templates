@@ -16,7 +16,7 @@ const HelloWorld: FC = () => {
   const [counter, setCounter] = useState(1);
 
   useMountEffect(() => {
-    addAlert("Hi", "danger", 5000);
+    addAlert("This is an alert!", "danger", 5000);
   });
 
   const onClick = () => {
