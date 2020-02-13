@@ -5,6 +5,7 @@
   "scripts": {
     "start:minimal": "cd minimal_template; yarn dev",
     "start:state": "cd state_template; yarn dev",
-    "start:web3": "cd web3_template; yarn dev"
+    "start:web3": "cd web3_template; yarn dev",
+    "upgradeAll": "cd minimal_template; yarn upgrade && cd ..; cd state_template; yarn upgrade && cd ..; cd web3_template; yarn upgrade"
   }
 }
