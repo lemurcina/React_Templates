@@ -12,7 +12,7 @@ const HelloWorld: FC = () => {
   }: { addAlert: AddAlert; clearAlerts: ClearAlerts } = alertContext;
 
   const [loading, setLoading] = useState(true);
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(1);
 
   useEffect(() => {
     if (!loading) return;
@@ -21,15 +21,16 @@ const HelloWorld: FC = () => {
     addAlert("Hi", "danger", 5000);
   }, [loading, addAlert]);
 
-  useEffect(() => {
+  const onClick = () => {
     addAlert(`Hello: ${counter}`, "light");
-  }, [counter]);
+    setCounter(counter + 1);
+  };
 
   return (
     <div className="container flex col center">
       <h1>Hello World</h1>
       <div className="row">
-        <button className="btn m" onClick={() => setCounter(counter + 1)}>
+        <button className="btn m" onClick={onClick}>
           Button
         </button>
         <button className="btn m" onClick={clearAlerts}>
