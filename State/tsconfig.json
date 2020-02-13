@@ -12,7 +12,8 @@
     "baseUrl": "./",
     "paths": {
       "components/*": ["src/components/*"],
-      "context/*": ["src/context/*"]
+      "context/*": ["src/context/*"],
+      "functions/*": ["src/functions/*"]
     }
   },
   "include": ["./src"]

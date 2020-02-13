@@ -10,7 +10,8 @@ module.exports = env => {
       extensions: [".ts", ".tsx", ".js"],
       alias: {
         components: path.resolve(__dirname, "./src/components/"),
-        context: path.resolve(__dirname, "./src/context/")
+        context: path.resolve(__dirname, "./src/context/"),
+        functions: path.resolve(__dirname, "./src/functions/")
       }
     },
     output: {

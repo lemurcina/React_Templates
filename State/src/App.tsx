@@ -6,7 +6,7 @@ import { faInfoCircle, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import HelloWorld from "components/HelloWorld";
 import Alerts from "components/layout/Alerts";
 
-import AlertState from "./context/alert/AlertState";
+import AlertState from "context/alert/AlertState";
 
 import "./App.css";
 

@@ -1,8 +1,9 @@
-import React, { FC, useContext, useEffect, useState } from "react";
+import React, { FC, useContext, useState } from "react";
 
 import { AddAlert, ClearAlerts } from "context/alert/IAlert";
 
 import AlertContext from "context/alert/AlertContext";
+import { useMountEffect } from "functions/hooks";
 
 const HelloWorld: FC = () => {
   const alertContext = useContext(AlertContext);
@@ -11,15 +12,11 @@ const HelloWorld: FC = () => {
     clearAlerts
   }: { addAlert: AddAlert; clearAlerts: ClearAlerts } = alertContext;
 
-  const [loading, setLoading] = useState(true);
   const [counter, setCounter] = useState(1);
 
-  useEffect(() => {
-    if (!loading) return;
-    setLoading(false);
-
+  useMountEffect(() => {
     addAlert("Hi", "danger", 5000);
-  }, [loading, addAlert]);
+  });
 
   const onClick = () => {
     addAlert(`Hello: ${counter}`, "light");
