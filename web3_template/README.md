@@ -14,4 +14,4 @@ Adds alerts, fontawesome, uuid, a .css file and loaders.
 
 ## Web3 Template
 
-Adds web3...
+Adds web3 support using ethers.js.
