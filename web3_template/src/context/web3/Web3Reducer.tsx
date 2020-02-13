@@ -1,9 +1,14 @@
-import {} from "../types";
+import { SET_PROVIDER } from "../types";
 
-import { Action } from "./IWeb3";
+import { Action, Web3State } from "./IWeb3";
 
-const Web3Reducer = (state: any, { type, payload }: Action): any => {
+const Web3Reducer = (
+  state: Web3State,
+  { type, payload }: Action
+): Web3State => {
   switch (type) {
+    case SET_PROVIDER:
+      return { ...state, provider: payload };
     default:
       return state;
   }
