@@ -29,7 +29,7 @@ const HelloWorld: FC = () => {
       <h1>Hello World</h1>
       <div className="row">
         <button className="btn m" onClick={onClick}>
-          Button
+          New Alert
         </button>
         <button className="btn m" onClick={clearAlerts}>
           Clear Alerts
