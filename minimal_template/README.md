@@ -1,4 +1,6 @@
-# React Template
+# React Templates
+
+## Minimal React Template
 
 Clean starting point using TypeScript, Yarn, Webpack, Babel and ESLint.
 
