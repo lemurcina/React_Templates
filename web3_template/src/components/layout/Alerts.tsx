@@ -2,12 +2,7 @@ import React, { FC, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import AlertContext from "context/alert/AlertContext";
-
-interface Alert {
-  id: string;
-  type: "primary" | "light" | "dark" | "danger" | "success" | "white";
-  msg: string;
-}
+import { Alert } from "context/alert/IAlert";
 
 const Alerts: FC = () => {
   const alertContext = useContext(AlertContext);
