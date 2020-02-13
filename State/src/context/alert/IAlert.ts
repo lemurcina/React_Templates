@@ -18,3 +18,7 @@ export interface AddAlert {
     timeout?: number
   ): void;
 }
+
+export interface ClearAlerts {
+  (): void;
+}
