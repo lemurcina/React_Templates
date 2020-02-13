@@ -1,9 +1,10 @@
 import React, { FC, useContext, useState } from "react";
 
+import { useMountEffect } from "functions/hooks";
+
 import { AddAlert, ClearAlerts } from "context/alert/IAlert";
 
 import AlertContext from "context/alert/AlertContext";
-import { useMountEffect } from "functions/hooks";
 
 const HelloWorld: FC = () => {
   const alertContext = useContext(AlertContext);

@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faInfoCircle, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 
