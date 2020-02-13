@@ -46,17 +46,17 @@ const Web3Connect: FC = () => {
   };
 
   return (
-    <div className="container">
-      <button className="btn" onClick={setDefaultProvider}>
-        <FontAwesomeIcon icon={["fab", "ethereum"]} />
-        Connect with Default
-      </button>
-      <button className="btn" onClick={setCurrentProvider}>
-        <FontAwesomeIcon icon={["fab", "ethereum"]} />
-        Connect with Current
-      </button>
-      <button className="btn" onClick={getBalance}>
-        <FontAwesomeIcon icon={["fab", "ethereum"]} />
+    <div className="container flex col center">
+      <div className="row">
+        <button className="btn m" onClick={setDefaultProvider}>
+          Connect with Default
+        </button>
+        <button className="btn m" onClick={setCurrentProvider}>
+          Connect with Current
+        </button>
+      </div>
+      <button className="btn m" onClick={getBalance}>
+        <FontAwesomeIcon className="mright" icon={["fab", "ethereum"]} />
         {`Balance: ${balance}`}
       </button>
     </div>

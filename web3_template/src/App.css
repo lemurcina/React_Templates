@@ -272,6 +272,14 @@ img {
   margin-bottom: 4rem;
 }
 
+.mright {
+  margin-right: 0.5rem;
+}
+
+.mleft {
+  margin-left: 0.5rem;
+}
+
 /* Grid */
 .grid-2 {
   display: grid;
