@@ -8,4 +8,4 @@ Typechecking is being done with the ts fork plugin.
 
 ## Context dependant state template
 
-Adds alerts, fontawesome, uuid and a .css file.
+Adds alerts, fontawesome, uuid, a .css file and loaders.
