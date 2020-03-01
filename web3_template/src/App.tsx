@@ -1,6 +1,10 @@
 import React, { FC } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faInfoCircle, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
+import {
+  faInfoCircle,
+  faTimesCircle,
+  faExclamationTriangle
+} from "@fortawesome/free-solid-svg-icons";
 import { faEthereum } from "@fortawesome/free-brands-svg-icons";
 
 import Alerts from "components/layout/Alerts";
@@ -12,7 +16,7 @@ import Web3State from "context/web3/Web3State";
 
 import "./App.css";
 
-library.add(faInfoCircle, faTimesCircle, faEthereum);
+library.add(faInfoCircle, faTimesCircle, faExclamationTriangle, faEthereum);
 
 const App: FC = () => (
   <AlertState>
