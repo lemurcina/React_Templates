@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev:state": "webpack-dev-server --mode development --env.development --open --hot",
+    "update": "yarn upgrade",
     "build": "webpack --mode production --env.production"
   },
   "dependencies": {
