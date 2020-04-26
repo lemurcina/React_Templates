@@ -6,7 +6,7 @@ import AlertReducer from "./AlertReducer";
 
 import { ADD_ALERT, REMOVE_ALERT, CLEAR_ALERTS } from "../types";
 
-import { Alerts, AddAlert } from "./IAlert";
+import { Alerts, AddAlert } from "context";
 
 const AlertState: FC = props => {
   const initialState: Alerts = [];

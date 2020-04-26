@@ -6,10 +6,10 @@ import Web3Reducer from "./Web3Reducer";
 
 import { SET_PROVIDER } from "../types";
 
-import {} from "./IWeb3";
+import { Web3State as IWeb3State, SetProvider } from "context";
 
 const Web3State: FC = props => {
-  const initialState: any = { provider: null };
+  const initialState: IWeb3State = { provider: null };
 
   const [state, dispatch] = useReducer(Web3Reducer, initialState);
 
@@ -17,7 +17,7 @@ const Web3State: FC = props => {
    * Actions
    */
 
-  const setProvider = (provider: Provider) => {
+  const setProvider: SetProvider = (provider: Provider) => {
     dispatch({
       type: SET_PROVIDER,
       payload: provider
