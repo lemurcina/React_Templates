@@ -6,7 +6,7 @@
     "start:minimal": "lerna run dev:minimal --stream",
     "start:state": "lerna run dev:state --stream",
     "start:web3": "lerna run dev:web3 --stream",
-    "update:all": "lerna run update --stream"
+    "update:all": "lerna run update"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
