@@ -46,6 +46,6 @@ declare module "context" {
   }
 
   export interface Web3Context extends Web3State {
-    setProvider: (provider: Provider) => void;
+    setProvider: SetProvider;
   }
 }
