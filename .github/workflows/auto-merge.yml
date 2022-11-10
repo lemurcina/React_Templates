@@ -17,4 +17,4 @@ jobs:
         with:
           pr-number: ${{ github.event.inputs.pr-number }}
           merge-method: squash
-          target: all
+          target: patch
