@@ -18,3 +18,4 @@ jobs:
           pr-number: ${{ github.event.inputs.pr-number }}
           merge-method: merge
           target: major
+          branch: master
