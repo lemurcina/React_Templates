@@ -1,0 +1,9 @@
+name: Manual Workflows
+on: [workflow_dispatch]
+jobs:
+  example:
+    name: Manual
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge
+        uses: actions/auto-merge@v2
