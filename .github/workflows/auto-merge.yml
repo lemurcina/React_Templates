@@ -1,15 +1,18 @@
-name: auto-merge
+name: automerge
 
 on:
-  pull_request:
   workflow_dispatch:
+    inputs:
+      pr-number:
+        required: true
 
 jobs:
-  auto-merge:
+  automerge:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
     steps:
-      - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+      - uses: fastify/github-action-merge-dependabot@v3.0.0
         with:
-          target: minor
-          github-token: ${{ secrets.mytoken }}
+          pr-number: ${{ github.event.inputs.pr-number }}
