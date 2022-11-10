@@ -1,4 +1,4 @@
-name: automerge
+name: auto-merge
 
 on:
   workflow_dispatch:
@@ -16,3 +16,4 @@ jobs:
       - uses: fastify/github-action-merge-dependabot@v3.5.0
         with:
           pr-number: ${{ github.event.inputs.pr-number }}
+          merge-method: merge
